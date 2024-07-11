@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="day"><button onclick="add()">add item</button>
+    <ul id="hung">
+
+    </ul>
+
+    <script>
+        var arr = [];
+        function add() {
+            var addList = document.getElementById("day");
+            var value = addList.value;
+            arr.push(value);
+            var li = "";
+            for (const item of arr) {
+                li += `<li>${item}</li>`
+            }
+            console.log(li);
+
+            document.getElementById("hung").innerHTML = li;
+        }
+    </script>
+</body>
+</html>

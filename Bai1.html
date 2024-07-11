@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="up"></ul>
+    <script>
+        var list = [
+            "list item number 1",
+            "list item number 2",
+            "list item number 3"
+        ]
+        var lay = document.getElementById("up");
+        var hung = "";
+        for (var i=0; i<list.length; i++){
+            hung += `<li>${list[i]}</li>`
+        }
+        document.getElementById("up").innerHTML=hung;
+    </script>
+</body>
+</html>
